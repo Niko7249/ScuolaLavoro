@@ -1,7 +1,7 @@
 #+TITLE: Alternanza @@html:<br>@@ Scuola-Lavoro @@html:<br>@@ V ITI
 #+AUTHOR: Nicolò Tamiano
 #+EMAIL: nicolo.tamiano@agoraconsulting.eu
-#+REVEAL_ROOT: .
+#+REVEAL_ROOT: ./reveal.js
 #+REVEAL_THEME: league
 #+OPTIONS: num:nil toc:nil ^:nil timestamp:nil
 # league, buona sfumatura
