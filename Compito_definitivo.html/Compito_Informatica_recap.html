@@ -1,0 +1,1155 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Compito Informatica V ITI</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="Org-mode">
+<meta name="author" content="Nicolò Tamiano">
+
+<link  href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<style type="text/css">
+/* org mode styles on top of twbs */
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    font-size: 18px;
+    margin-bottom: 105px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 101px;
+    background-color: #f5f5f5;
+}
+
+footer > div {
+    padding: 10px;
+}
+
+footer p {
+    margin: 0 0 5px;
+    text-align: center;
+    font-size: 16px;
+}
+
+#table-of-contents {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+blockquote p {
+    font-size: 18px;
+}
+
+pre {
+    font-size: 16px;
+}
+
+.footpara {
+    display: inline-block;
+}
+
+figcaption {
+  font-size: 16px;
+  color: #666;
+  font-style: italic;
+  padding-bottom: 15px;
+}
+
+/* from twbs docs */
+
+.bs-docs-sidebar.affix {
+    position: static;
+}
+@media (min-width: 768px) {
+    .bs-docs-sidebar {
+        padding-left: 20px;
+    }
+}
+
+/* All levels of nav */
+.bs-docs-sidebar .nav > li > a {
+    display: block;
+    padding: 4px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #999;
+}
+.bs-docs-sidebar .nav > li > a:hover,
+.bs-docs-sidebar .nav > li > a:focus {
+    padding-left: 19px;
+    color: #A1283B;
+    text-decoration: none;
+    background-color: transparent;
+    border-left: 1px solid #A1283B;
+}
+.bs-docs-sidebar .nav > .active > a,
+.bs-docs-sidebar .nav > .active:hover > a,
+.bs-docs-sidebar .nav > .active:focus > a {
+    padding-left: 18px;
+    font-weight: bold;
+    color: #A1283B;
+    background-color: transparent;
+    border-left: 2px solid #A1283B;
+}
+
+/* Nav: second level (shown on .active) */
+.bs-docs-sidebar .nav .nav {
+    display: none; /* Hide by default, but at >768px, show it */
+    padding-bottom: 10px;
+}
+.bs-docs-sidebar .nav .nav > li > a {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 30px;
+    font-size: 12px;
+    font-weight: normal;
+}
+.bs-docs-sidebar .nav .nav > li > a:hover,
+.bs-docs-sidebar .nav .nav > li > a:focus {
+    padding-left: 29px;
+}
+.bs-docs-sidebar .nav .nav > .active > a,
+.bs-docs-sidebar .nav .nav > .active:hover > a,
+.bs-docs-sidebar .nav .nav > .active:focus > a {
+    padding-left: 28px;
+    font-weight: 500;
+}
+
+/* Nav: third level (shown on .active) */
+.bs-docs-sidebar .nav .nav .nav {
+    padding-bottom: 10px;
+}
+.bs-docs-sidebar .nav .nav .nav > li > a {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 40px;
+    font-size: 12px;
+    font-weight: normal;
+}
+.bs-docs-sidebar .nav .nav .nav > li > a:hover,
+.bs-docs-sidebar .nav .nav .nav > li > a:focus {
+    padding-left: 39px;
+}
+.bs-docs-sidebar .nav .nav .nav > .active > a,
+.bs-docs-sidebar .nav .nav .nav > .active:hover > a,
+.bs-docs-sidebar .nav .nav .nav > .active:focus > a {
+    padding-left: 38px;
+    font-weight: 500;
+}
+
+/* Show and affix the side nav when space allows it */
+@media (min-width: 992px) {
+    .bs-docs-sidebar .nav > .active > ul {
+        display: block;
+    }
+    /* Widen the fixed sidebar */
+    .bs-docs-sidebar.affix,
+    .bs-docs-sidebar.affix-bottom {
+        width: 213px;
+    }
+    .bs-docs-sidebar.affix {
+        position: fixed; /* Undo the static from mobile first approach */
+        top: 20px;
+    }
+    .bs-docs-sidebar.affix-bottom {
+        position: absolute; /* Undo the static from mobile first approach */
+    }
+    .bs-docs-sidebar.affix .bs-docs-sidenav,.bs-docs-sidebar.affix-bottom .bs-docs-sidenav {
+        margin-top: 0;
+        margin-bottom: 0
+    }
+}
+@media (min-width: 1200px) {
+    /* Widen the fixed sidebar again */
+    .bs-docs-sidebar.affix-bottom,
+    .bs-docs-sidebar.affix {
+        width: 263px;
+    }
+}
+</style>
+<script type="text/javascript">
+$(function() {
+    'use strict';
+
+    $('.bs-docs-sidebar li').first().addClass('active');
+
+    $(document.body).scrollspy({target: '.bs-docs-sidebar'});
+
+    $('.bs-docs-sidebar').affix();
+});
+</script>
+</head>
+<body>
+<div id="content" class="container">
+<div class="row"><div class="col-md-12"><h1 class="title">Compito Informatica V ITI</h1>
+
+<div id="outline-container-sec-" class="outline-2">
+<h2 id="sec-">1 - Infrastruttura della rete</h2>
+<div class="outline-text-2" id="text-">
+</div><div id="outline-container-sec-" class="outline-3">
+<h3 id="sec-">Subnet Structure</h3>
+<div class="outline-text-3" id="text-">
+<p>
+Ho creato tre subnet al fine di gestire le seguenti necessità:
+</p>
+<ul class="org-ul">
+<li>la subnet da 254 Hosts servirà a gestire il "Main Office"
+</li>
+<li>una  delle due subnet da 126 Host verrà utilizzata per gestire la "Server Room"
+</li>
+</ul>
+
+<p>
+Segue la tabella con le specifiche.
+</p>
+
+<table class="table table-striped table-bordered table-hover table-condensed">
+
+
+<colgroup>
+<col  class="left">
+
+<col  class="left">
+
+<col  class="right">
+
+<col  class="right">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="text-left"><code>SUBNET ADDRESS</code></th>
+<th scope="col" class="text-left"><code>RANGE OF ADDRESSES</code></th>
+<th scope="col" class="text-right"><code>NETMASK</code></th>
+<th scope="col" class="text-right"><code>HOSTS</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="text-left">192.168.0.0/24</td>
+<td class="text-left">192.168.0.0 - 192.168.0.255</td>
+<td class="text-right">255.255.255.0</td>
+<td class="text-right">254</td>
+</tr>
+
+<tr>
+<td class="text-left">192.168.1.0/25</td>
+<td class="text-left">192.168.1.0 - 192.168.1.127</td>
+<td class="text-right">255.255.255.128</td>
+<td class="text-right">126</td>
+</tr>
+
+<tr>
+<td class="text-left">192.168.1.128/25</td>
+<td class="text-left">192.168.1.128 - 192.168.1.255</td>
+<td class="text-right">255.255.255.128</td>
+<td class="text-right">126</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-sec-" class="outline-3">
+<h3 id="sec-">Subnet 192.168.0.0/24</h3>
+<div class="outline-text-3" id="text-">
+<p>
+Questa sottorete viene utilizzata interamente per gestire tutti i
+locali designati come "Main Office", abbiamo quindi il locale
+direttore, locale giornalisti e locale redattori.
+</p>
+
+<ul class="org-ul">
+<li><b>Gateway default</b>: 192.168.0.1
+</li>
+<li><b>Subnet mask</b>: 255.255.255.0      
+</li>
+</ul>
+
+<table class="table table-striped table-bordered table-hover table-condensed">
+
+
+<colgroup>
+<col  class="left">
+
+<col  class="left">
+
+<col  class="left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="text-left"><b>Purpose</b></th>
+<th scope="col" class="text-left"><b>Range of addresses</b></th>
+<th scope="col" class="text-left"><b>Allocated</b></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="text-left">DHCP Devices (smartphone/laptop) that connect's trough Wi-Fi</td>
+<td class="text-left">192.168.0.2/24 - 192.168.0.100/24</td>
+<td class="text-left">YES</td>
+</tr>
+
+<tr>
+<td class="text-left">Static network management devices (switch/firewall)</td>
+<td class="text-left">192.168.0.101/24 - 192.168.0.110/24</td>
+<td class="text-left">YES</td>
+</tr>
+
+<tr>
+<td class="text-left">Static wifi access point</td>
+<td class="text-left">192.168.0.111/24 - 192.168.0.120/24</td>
+<td class="text-left">YES</td>
+</tr>
+
+<tr>
+<td class="text-left">Basic PC's</td>
+<td class="text-left">192.168.0.121/24 - 192.168.0.200/24</td>
+<td class="text-left">YES</td>
+</tr>
+
+<tr>
+<td class="text-left">Printer's</td>
+<td class="text-left">192.168.0.201/24 - 192.168.0.210/24</td>
+<td class="text-left">YES</td>
+</tr>
+
+<tr>
+<td class="text-left">Available for Future Use</td>
+<td class="text-left">192.168.0.211/24 - 191.168.0.254/24</td>
+<td class="text-left">NO</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div id="outline-container-sec-" class="outline-4">
+<h4 id="sec-">Assegnazione indirizzi IP</h4>
+<div class="outline-text-4" id="text-">
+<p>
+Segue l'assegnazione dei singoli dispositivi al relativo indirizzo
+IP per la sottorete in questione:
+</p>
+
+
+<figure>
+<p><img src="./Images_Schema_Rete/Locale_Direttore.jpg" class="img-responsive" alt="Locale_Direttore.jpg">
+</p>
+</figure>
+
+<table class="table table-striped table-bordered table-hover table-condensed">
+
+
+<colgroup>
+<col  class="left">
+
+<col  class="right">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="text-left"><b>Hostname</b></th>
+<th scope="col" class="text-right"><b>IP address</b></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="text-left">Basic PC A1</td>
+<td class="text-right">192.168.0.121</td>
+</tr>
+
+<tr>
+<td class="text-left">Switch C1</td>
+<td class="text-right">192.168.0.101</td>
+</tr>
+
+<tr>
+<td class="text-left">Firewall F1</td>
+<td class="text-right">192.168.0.110</td>
+</tr>
+
+<tr>
+<td class="text-left">Router Z1</td>
+<td class="text-right">192.168.0.1</td>
+</tr>
+</tbody>
+</table>
+
+
+<figure>
+<p><img src="./Images_Schema_Rete/Locale_Giornalisti.jpg" class="img-responsive" alt="Locale_Giornalisti.jpg">
+</p>
+</figure>
+
+<table class="table table-striped table-bordered table-hover table-condensed">
+
+
+<colgroup>
+<col  class="left">
+
+<col  class="right">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="text-left"><b>Hostname</b></th>
+<th scope="col" class="text-right"><b>IP address</b></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="text-left">Basic PC A2</td>
+<td class="text-right">192.168.0.122</td>
+</tr>
+
+<tr>
+<td class="text-left">Basic PC A3</td>
+<td class="text-right">192.168.0.123</td>
+</tr>
+
+<tr>
+<td class="text-left">Basic PC A--</td>
+<td class="text-right">192.168.0.---</td>
+</tr>
+
+<tr>
+<td class="text-left">Basic PC A--</td>
+<td class="text-right">192.168.0.---</td>
+</tr>
+
+<tr>
+<td class="text-left">Basic PC A30</td>
+<td class="text-right">192.168.0.150</td>
+</tr>
+
+<tr>
+<td class="text-left">Basic PC A31</td>
+<td class="text-right">192.168.0.151</td>
+</tr>
+
+<tr>
+<td class="text-left">Switch C2</td>
+<td class="text-right">192.168.0.102</td>
+</tr>
+
+<tr>
+<td class="text-left">Advanced Printer P2</td>
+<td class="text-right">192.168.0.201</td>
+</tr>
+
+<tr>
+<td class="text-left">Firewall F1</td>
+<td class="text-right">192.168.0.110</td>
+</tr>
+
+<tr>
+<td class="text-left">Router Z1</td>
+<td class="text-right">192.168.0.1</td>
+</tr>
+</tbody>
+</table>
+
+
+<figure>
+<p><img src="./Images_Schema_Rete/Locale_Redattori.jpg" class="img-responsive" alt="Locale_Redattori.jpg">
+</p>
+</figure>
+
+<table class="table table-striped table-bordered table-hover table-condensed">
+
+
+<colgroup>
+<col  class="left">
+
+<col  class="right">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="text-left"><b>Hostname</b></th>
+<th scope="col" class="text-right"><b>IP address</b></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="text-left">Basic PC A32</td>
+<td class="text-right">192.168.0.152</td>
+</tr>
+
+<tr>
+<td class="text-left">Basic PC A33</td>
+<td class="text-right">192.168.0.153</td>
+</tr>
+
+<tr>
+<td class="text-left">Switch C3</td>
+<td class="text-right">192.168.0.103</td>
+</tr>
+
+<tr>
+<td class="text-left">Advanced Printer P3</td>
+<td class="text-right">192.168.0.202</td>
+</tr>
+
+<tr>
+<td class="text-left">Firewall F1</td>
+<td class="text-right">192.168.0.110</td>
+</tr>
+
+<tr>
+<td class="text-left">Router Z1</td>
+<td class="text-right">192.168.0.1</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-" class="outline-3">
+<h3 id="sec-">Subnet 192.168.1.0/25</h3>
+<div class="outline-text-3" id="text-">
+<p>
+Questa sottorete viene utilizzata interamente per gestire il locale
+designato come "Server Room", abbiamo quindi il locale servers.
+</p>
+
+<ul class="org-ul">
+<li><b>Gateway default</b>: 192.168.1.1
+</li>
+<li><b>Subnet mask</b>: 255.255.255.128
+</li>
+</ul>
+
+<table class="table table-striped table-bordered table-hover table-condensed">
+
+
+<colgroup>
+<col  class="left">
+
+<col  class="left">
+
+<col  class="left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="text-left"><b>Purpose</b></th>
+<th scope="col" class="text-left"><b>Range of addresses</b></th>
+<th scope="col" class="text-left"><b>Allocated</b></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="text-left">Server Web</td>
+<td class="text-left">192.168.1.2/24 - 192.168.1.10/24</td>
+<td class="text-left">YES</td>
+</tr>
+
+<tr>
+<td class="text-left">Server Database</td>
+<td class="text-left">192.168.1.11/24 - 192.168.1.20/24</td>
+<td class="text-left">YES</td>
+</tr>
+
+<tr>
+<td class="text-left">Static network management devices (switch/firewall)</td>
+<td class="text-left">192.168.1.21/24 - 192.168.1.30/24</td>
+<td class="text-left">YES</td>
+</tr>
+
+<tr>
+<td class="text-left">Available for Future Use</td>
+<td class="text-left">192.168.1.31/24 - 192.168.1.127/24</td>
+<td class="text-left">NO</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div id="outline-container-sec-" class="outline-4">
+<h4 id="sec-">Assegnazione indirizzi IP</h4>
+<div class="outline-text-4" id="text-">
+<p>
+Segue l'assegnazione dei singoli dispositivi al relativo indirizzo
+IP per la sottorete in questione:
+</p>
+
+
+<figure>
+<p><img src="./Images_Schema_Rete/Locale_Server.jpg" class="img-responsive" alt="Locale_Server.jpg">
+</p>
+</figure>
+
+<table class="table table-striped table-bordered table-hover table-condensed">
+
+
+<colgroup>
+<col  class="left">
+
+<col  class="right">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="text-left"><b>Hostname</b></th>
+<th scope="col" class="text-right"><b>IP address</b></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="text-left">Server Web</td>
+<td class="text-right">192.168.1.2</td>
+</tr>
+
+<tr>
+<td class="text-left">Server Database</td>
+<td class="text-right">192.168.1.11</td>
+</tr>
+
+<tr>
+<td class="text-left">Switch C4</td>
+<td class="text-right">192.168.1.21</td>
+</tr>
+
+<tr>
+<td class="text-left">Firewall F2</td>
+<td class="text-right">192.168.1.30</td>
+</tr>
+
+<tr>
+<td class="text-left">Router Z1</td>
+<td class="text-right">192.168.1.1</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-" class="outline-3">
+<h3 id="sec-">Subnet 192.168.1.128/25</h3>
+<div class="outline-text-3" id="text-">
+<p>
+Questa sottorete non viene utilizzata, è stata creata per "Uso Futuro".
+</p>
+
+<ul class="org-ul">
+<li><b>Gateway default</b>: 192.168.1.129
+</li>
+<li><b>Subnet mask</b>: 255.255.255.128
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-" class="outline-2">
+<h2 id="sec-">2 - Protezione della rete locale e dei server interni</h2>
+<div class="outline-text-2" id="text-">
+<p>
+La rete locale è stata progettata cercando una soluzione che
+ottimizza costi e sicurezza. Utilizzo due Firewalls, uno
+implementato per filtrare tutte le porte inutilizzate all'interno
+della LAN <b>Main Office</b>, l'altro per filtrare tutte le porte
+inutilizzate all'interno della LAN <b>Server Room</b>, questo inoltre
+permette di rendere le due LAN localmente inaccessibili tra di loro
+evitando cosi che eventuali breach possano estendersi da una rete
+all'altra.
+</p>
+
+<p>
+Infine, per aumentare ulteriormente il livello di protezione, ho
+introdotto le seguenti misure di sicurezza.
+</p>
+
+<p>
+<br>
+<br>
+<br>
+<br>
+</p>
+
+<ul class="org-ul">
+<li><b>Security Key Universal 2nd Factor Token(U2F)</b>:
+
+<p>
+È un sistema di autenticazione a due fattori implementato tramite
+l'utizzo di una chiavetta usb.
+</p>
+
+<p>
+Infatti nel caso in cui un malintenzionato riuscisse ad ottenere
+la password dell'account di un giornalista, non potrà comunque
+accedere ai dati del medesimo a meno che non riesca a violare o
+rubare il Token di autenticazione.
+</p>
+
+<p>
+Questo sistema può essere implementato in tutte le applicazioni
+dell'azienda o solo in quelle contenenti dati sensibili a seconda
+delle propie necessità, risulta essere anche un oggetto non
+costoso e quindi di facile implementazione.
+</p>
+
+<p>
+Possiamo infine, analizzare il case history di Google LLC. Prima
+dell'implementazione di questa misura di sicurezza, i suoi
+dipendenti ricevevano phishing di continuo. Dall'inizio del 2017
+quando hanno implementato il sistema, sono riusciti a ridurre il
+phishing a zero casi reported.
+</p>
+</li>
+
+<li><b>Accesso a locale tramite Badge</b>
+
+<p>
+L'accesso a tutti i locali avverrà tramite l'utilizzo di apposito
+badge, i log di accesso di tutto il personale verrà conservato in
+base a quanto previsto dalle normative vigenti.
+</p>
+
+<p>
+Questo permette anche di impostare specifici permessi ad ogni tipo
+di utente. Ad esempio un giornalista non potrà recarsi all'interno
+della Server Room, mentre un sistemista potrà farlo.
+</p>
+
+<p>
+Tutti questi sistemi utilizzati contemporaneamente dovrebbero
+permettere una protezione molto più alta rispetto alla media delle
+aziende Italiane.
+</p>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-" class="outline-2">
+<h2 id="sec-">3 - Descrizione Servizio ARP</h2>
+<div class="outline-text-2" id="text-">
+<ul class="org-ul">
+<li><b>ARP - Address Resolution Protcol</b>
+
+<p>
+Il protocollo ARP è utilizzato per scoprire l'indirizzo MAC di un
+host tramite l'indirizzo IP, di seguito il suo funzionamento:
+</p>
+
+<p>
+L'Host <code>A</code> invia una richiesta ARP all'indirizzo IP dell'Host <code>B</code>,
+questa richiesta viene inviata in broadcast in tutta la LAN, la
+richiesta viene accettata solamente dall'Host <code>B</code> il quale
+risponde inviando all'Host <code>A</code> un pacchetto dati contenente il
+propio indirizzo IP e l'indirizzo MAC. L'Host <code>A</code> riceve il
+pacchetto e salva l'indirizzo MAC nella sua <b>ARP Table</b> contenete
+i riferimenti di indirizzo IP e MAC di tutti gli Hosts registrati.
+</p>
+</li>
+
+<li><b>IP - Internet Protocol</b>
+
+<p>
+Il protocollo IP è utilizzato per far comunicare hosts che fanno
+parte di reti diverse.
+</p>
+
+<p>
+Nella prima sezione ho discusso la configurazione di tale
+servizio.
+</p>
+</li>
+</ul>
+
+<p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-" class="outline-2">
+<h2 id="sec-">4 - Schema DB e Pagina web</h2>
+<div class="outline-text-2" id="text-">
+<p>
+Di seguito illustro lo schema concettuale, lo schema logico e una
+parte di pagina web dedicata al login per l'accesso all'area
+privata.
+</p>
+</div>
+
+<div id="outline-container-sec-" class="outline-3">
+<h3 id="sec-"><b>Schema Concettuale</b></h3>
+<div class="outline-text-3" id="text-">
+
+<figure>
+<p><img src="./Images_Schema_Rete/Mappa_Concettuale.jpg" class="img-responsive" alt="Mappa_Concettuale.jpg">
+</p>
+</figure>
+
+<p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-" class="outline-3">
+<h3 id="sec-"><b>Schema Logico</b></h3>
+<div class="outline-text-3" id="text-">
+
+<figure>
+<p><img src="./Images_Schema_Rete/Mappa_Logica.jpg" class="img-responsive" alt="Mappa_Logica.jpg">
+</p>
+</figure>
+
+<p>
+<br>
+<br>
+<br>
+<br>
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-" class="outline-3">
+<h3 id="sec-">Pagina web</h3>
+<div class="outline-text-3" id="text-">
+<p>
+Inizializzazione sessione 
+</p>
+<div class="org-src-container">
+
+<pre class="src src-php">// Definisco variabili di sessione
+$servername = "localhost";
+$username = "root";
+$password = "test";
+$database = "CompitoInfo";
+
+// Mi connetto al database
+$conn = new mysqli($servername, $username, $password, $database);
+
+// Controllo se ci sono stati errori
+if ($conn-&gt;connect_error) {
+    // In caso di errore chiudo la connessione con un messaggio di errore.
+    // NOTA: da rimuovere in caso di deployment
+    die("Connection failed: " . $conn-&gt;connect_error);
+}
+</pre>
+</div>
+
+<p>
+<br>
+<br>
+<br>
+<br>
+</p>
+
+<p>
+Controllo login e generazione pagina privata per utente in caso di
+richiesta POST con parametri 'email' e 'password'
+</p>
+<div class="org-src-container">
+
+<pre class="src src-php">// Controllo il tipo di richiesta
+if(isset($_POST['email']) &amp;&amp; isset($_POST['password'])) {
+    // Se la richiesta è di tipo POST e contiene i campi "email" e
+    // "password", controllo se i dati inviati dall'utente sono presenti
+    // nel database tramite una query, e in caso di successo faccio
+    // loggare l'utente nella sua area privata.
+
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+
+    // Mi preparo la query e la seguo
+    // NOTA: Attualmete questa query è vulnerabile (volutamente) a SQL injection.
+    $query = "SELECT * FROM Utente, Tipo_Utente WHERE Utente.email='$email' and Utente.password='$password' and Utente.ID_Tipo_Utente = Tipo_Utente.ID_Tipo_Utente";
+    $res = $conn-&gt;query($query);
+
+    // Se la query fallisce stampo l'errore e termino la connessione
+    // NOTA: da rimuovere in caso di deployment
+    if(!$res) { 
+	die("Invalid query: " . $conn-&gt;error);
+    }
+
+    if($res-&gt;num_rows == 1) {
+	// Se la query viene eseguita senza errori, genero la pagina privata contenente alcuni dati dell'utente loggato.
+	echo "You are logged in your private area.";
+	$row = $res-&gt;fetch_assoc();
+?&gt;
+
+    &lt;br&gt;
+    &lt;br&gt;
+    &lt;table border=1 bordercolor=black"&gt;
+	&lt;tr&gt;&lt;td&gt; User-ID: &lt;/td&gt; &lt;td&gt; &lt;?php echo $row['ID_Utente'] ?&gt; &lt;/td&gt;&lt;/tr&gt;
+	&lt;tr&gt;&lt;td&gt; Email: &lt;/td&gt; &lt;td&gt; &lt;?php echo $row['Email'] ?&gt;&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr&gt;&lt;td&gt; Ruolo: &lt;/td&gt; &lt;td&gt; &lt;?php echo $row['Permesso'] ?&gt;&lt;/td&gt;&lt;/tr&gt;		
+    &lt;/table&gt;
+	&lt;?php
+    } else {
+	echo "Get out from here.";
+    }
+}
+</pre>
+</div>
+
+<p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</p>
+
+<p>
+Generazione form per effettuare login in caso di richiesta GET.
+</p>
+<div class="org-src-container">
+
+<pre class="src src-php">else {
+  // Se la richiesta non è POST, oppure non ha i campi email e password,
+  // non posso eseguire l'autenticazione, e quindi rispondo con un form
+  // html statico per far loggare l'utente.
+  ?&gt;
+  &lt;html&gt;
+      &lt;!-- Form utilizzato per inviare i dati per i login --&gt;
+      &lt;form action="login.php" method ="post"&gt;
+	  &lt;!-- La tabella viene utilizzata per allineare i vari campi del form --&gt;
+	  &lt;table&gt;
+	      &lt;!-- Prima riga del form --&gt;
+	      &lt;tr&gt; &lt;td&gt;Email: &lt;/td&gt; 
+		  &lt;td&gt; &lt;input type="text" name="email" id="firstlast"&gt; &lt;/td&gt; 
+	      &lt;/tr&gt;
+	      &lt;!-- Seconda riga del form --&gt;
+	      &lt;tr&gt; &lt;td&gt; Password: &lt;/td&gt; 
+		  &lt;td&gt; &lt;input type="password" name="password" id="email"&gt; &lt;/td&gt; 
+	      &lt;/tr&gt;
+	      &lt;!-- Terza riga del form --&gt;
+	      &lt;!-- Il pulsante "submit" viene utilizzato per inviare i dati al server --&gt;
+	      &lt;!-- Il pulsante "reset" viene utilizzato per resettare il form --&gt;
+	      &lt;tr&gt; &lt;td&gt; &lt;input type="submit" value="Submit"&gt;&lt;/td&gt; 
+		  &lt;td&gt; &lt;input type="reset" value="reset" &gt; &lt;/td&gt;
+	      &lt;/tr&gt;
+	      &lt;/table&gt;
+	  &lt;/form&gt;
+      &lt;/html&gt;
+
+  &lt;?php
+  }
+  ?&gt;
+</pre>
+</div>
+
+<p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-" class="outline-2">
+<h2 id="sec-">5 - Firma Digitale</h2>
+<div class="outline-text-2" id="text-">
+<p>
+La firma digitale serve a firmare e autenticare uno specifico documento in formato digitale.
+La necessità è quindi quella di creare un sistema che possa certificare che la firma sia vera e che la medesima non possa essere manomessa.
+Per fare ciò si utilizza un metodo matematico, il sistema ad esempio, RSA permette l'implementazione della firma digitale.
+Segue schema del processo di firma
+</p>
+
+
+<figure>
+<p><img src="./Images_Schema_Rete/Firma_Digitale.jpg" class="img-responsive" alt="Firma_Digitale.jpg">
+</p>
+</figure>
+
+<ul class="org-ul">
+<li><b>Algoritmo di firma</b> 
+
+<p>
+L'algoritmo permette di calcolare l'Hash del documento da firmare,
+successivamente cifra il codice Hash tramite l'utilizzo della
+chiave privata di Alice ed invia al destinatario il Documento e
+l'Hash generato cifrato.
+</p>
+</li>
+</ul>
+
+
+<ul class="org-ul">
+<li><b>Algoritmo di verifica</b>
+
+<p>
+L'algoritmo permette di verificare che la firma sia autentica,
+innazitutto si calcola l'Hash del documento, successivamente
+tramite l'utilizzo della chiave pubblica di Alice decifra l'Hash
+cifrato, verifica che l'Hash ottenuto corrisponda a quello
+calcolato direttamente dal documento, nel caso in cui il documento
+è firmato correttamente l'Hash corrisponde, altrimenti no.
+</p>
+</li>
+</ul>
+
+
+<p>
+È importante notare che in tutti i sistemi di cifrazione di questo
+tipo, ci dev'essere un entità superiore chiamata Certification
+Authority che certifica il possedimento di una relativa chiave
+publica ad un relativo soggetto fisico o ente.
+</p>
+
+<p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-" class="outline-2">
+<h2 id="sec-">6 - Codifica Query in linguaggio SQL</h2>
+<div class="outline-text-2" id="text-">
+<ul class="org-ul">
+<li>a) <b>L'elenco degli articoli più letti dagli abbonati.</b>
+
+<div class="org-src-container">
+
+<pre class="src src-sql">SELECT Utente_Articolo.ID_Articolo, sum(Utente_Articolo.Visite) as Numero_Visite
+FROM Utente_Articolo, Utente, Tipo_Utente
+WHERE Utente_Articolo.ID_Utente = Utente.ID_Utente and
+      Utente.ID_Tipo_Utente = Tipo_Utente.ID_Tipo_Utente and
+      Tipo_Utente.Permesso = "Abbonato"
+GROUP BY Utente_Articolo.ID_Articolo
+ORDER BY Numero_Visite DESC;
+</pre>
+</div>
+</li>
+
+<li>b) <b>Il numero degli articoli letti da uno specifico abbonato.</b>
+
+<div class="org-src-container">
+
+<pre class="src src-sql">SELECT Utente_Articolo.ID_Utente, count(*) as Articoli_Letti
+FROM Utente_Articolo, Utente, Tipo_Utente
+WHERE Utente_Articolo.ID_Utente = Utente.ID_Utente and
+      Utente.ID_Tipo_Utente = Tipo_Utente.ID_Tipo_Utente and
+      Tipo_Utente.Permesso = "Abbonato" and
+      Utente.Email = "ciao@ciao.it"
+GROUP BY Utente_Articolo.ID_Utente;
+</pre>
+</div>
+</li>
+
+<li>c) <b>Per ogni articolo il numero di visualizzazioni da parte di tutti gli utenti.</b>
+
+<div class="org-src-container">
+
+<pre class="src src-sql">SELECT Utente_Articolo.ID_Articolo, sum(Utente_Articolo.Visite) as Numero_Visite
+FROM Utente_Articolo, Utente, Tipo_Utente
+WHERE Utente_Articolo.ID_Utente = Utente.ID_Utente and
+      Utente.ID_Tipo_Utente = Tipo_Utente.ID_Tipo_Utente
+GROUP BY Utente_Articolo.ID_Articolo
+ORDER BY Numero_Visite DESC;
+</pre>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div></div></div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<footer id="postamble" class="">
+<div><p class="author">Author: Nicolò Tamiano</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 26.3 (<a href="http://orgmode.org">Org-mode</a> 9.1.9)</p>
+</div>
+</footer>
+</body>
+</html>
